@@ -1,14 +1,14 @@
-import { json, Router, urlencoded } from 'express';
+import {Router, urlencoded} from 'express';
 
 import logger from '../../../config/logger';
 import validate from '../middlewares/validators/validator';
-import { validator } from '../middlewares/validators';
-import { controller } from '../controllers';
+import {validator} from '../middlewares/validators';
+import {controller} from '../controllers';
 
 const router = Router();
 
 router
-	.use(json())
+	.use(urlencoded({ extended: true }))
 	.route('/shorturl')
 	.post(validate([validator.shorturl.findOrCreateShortUrl]), controller.shorturl.findOrCreateShortUrl)
 	.all((req, res) => {
