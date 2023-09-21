@@ -15,6 +15,14 @@
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrarvind90/fcc-backend-api-projects.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrarvind90/fcc-backend-api-projects/issues"
+  },
+  "homepage": "https://github.com/mrarvind90/fcc-backend-api-projects#readme",
   "keywords": [
     "freeCodeCamp",
     "javascript",
