@@ -2,11 +2,11 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
-import env from './config/environment';
-import DB_OPTIONS from './config/database';
-import CORS_OPTIONS from './config/cors';
-import logger from './config/logger';
-import { route } from './api/v1/routes';
+import env from './config/environment.js';
+import DB_OPTIONS from './config/database.js';
+import CORS_OPTIONS from './config/cors.js';
+import logger from './config/logger.js';
+import { route } from './api/v1/routes/index.js';
 
 // Initialise express server
 const app = express();

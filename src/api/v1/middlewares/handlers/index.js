@@ -1,4 +1,4 @@
-import * as file from './file';
+import * as file from './file.js';
 
 export const handler = {
 	file,

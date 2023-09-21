@@ -1,9 +1,9 @@
 import { json, Router, urlencoded } from 'express';
 
-import validate from '../middlewares/validators/validator';
-import { validator } from '../middlewares/validators';
-import { addExerciseLogs } from '../middlewares/validators/users';
-import { controller } from '../controllers';
+import validate from '../middlewares/validators/validator.js';
+import { validator } from '../middlewares/validators/index.js';
+import { addExerciseLogs } from '../middlewares/validators/users.js';
+import { controller } from '../controllers/index.js';
 
 const router = Router();
 

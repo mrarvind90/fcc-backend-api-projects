@@ -1,8 +1,8 @@
-import timestamp from './timestamp';
-import whoami from './whoami';
-import shorturl from './shorturl';
-import users from './users';
-import fileanalyse from './fileanalyse';
+import timestamp from './timestamp.js';
+import whoami from './whoami.js';
+import shorturl from './shorturl.js';
+import users from './users.js';
+import fileanalyse from './fileanalyse.js';
 
 export const route = {
 	timestamp,

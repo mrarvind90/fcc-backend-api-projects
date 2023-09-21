@@ -1,4 +1,4 @@
-import { service } from '../services';
+import { service } from '../services/index.js';
 
 export const getTimestamp = (req, res) => {
 	const payload = service.timestamp.getFormattedDate(req.params.date);

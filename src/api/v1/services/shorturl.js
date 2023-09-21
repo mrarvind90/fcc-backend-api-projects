@@ -1,4 +1,4 @@
-import { model } from '../models';
+import { model } from '../models/index.js';
 
 export const findOrCreateShortUrl = async (originalUrl) => {
 	let shortUrl = await model.shorturl.findOne().byOriginalUrl(originalUrl).exec();

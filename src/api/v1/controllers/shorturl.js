@@ -1,4 +1,4 @@
-import { service } from '../services';
+import { service } from '../services/index.js';
 
 export const findOrCreateShortUrl = async (req, res) => {
 	const { original_url, short_url } = await service.shorturl.findOrCreateShortUrl(req.body.url);

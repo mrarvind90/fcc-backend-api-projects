@@ -1,7 +1,6 @@
 /node_modules
 /public
 /logs
-.babelrc.json
 .eslintrc.json
 .prettierrc.json
 package.json
