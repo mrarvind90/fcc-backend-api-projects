@@ -1,5 +1,5 @@
-import { shorturl } from './shorturl';
-import { users } from './users';
+import { shorturl } from './shorturl.js';
+import { users } from './users.js';
 
 export const model = {
 	shorturl,

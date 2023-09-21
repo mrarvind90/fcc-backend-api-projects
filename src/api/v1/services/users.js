@@ -1,5 +1,6 @@
-import { model } from '../models';
 import mongoose from 'mongoose';
+
+import { model } from '../models/index.js';
 
 export const createNewUser = async (username) => {
 	return await model.users.create({ username });

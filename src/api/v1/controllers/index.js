@@ -1,8 +1,8 @@
-import * as timestamp from './timestamp';
-import * as whoami from './whoami';
-import * as shorturl from './shorturl';
-import * as users from './users';
-import * as fileanalyse from './fileanalyse';
+import * as timestamp from './timestamp.js';
+import * as whoami from './whoami.js';
+import * as shorturl from './shorturl.js';
+import * as users from './users.js';
+import * as fileanalyse from './fileanalyse.js';
 
 export const controller = {
 	timestamp,

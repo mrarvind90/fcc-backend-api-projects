@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
-import logger from '../../../config/logger';
-import { handler } from '../middlewares/handlers';
-import { controller } from '../controllers';
+import logger from '../../../config/logger.js';
+import { handler } from '../middlewares/handlers/index.js';
+import { controller } from '../controllers/index.js';
 
 const router = Router();
 

@@ -1,5 +1,6 @@
 import { validationResult } from 'express-validator';
-import logger from '../../../../config/logger';
+
+import logger from '../../../../config/logger.js';
 
 // TODO: To be deprecated in favor of a custom sanitizer, validation chain and context runner
 const validationResultWithMessage = validationResult.withDefaults({

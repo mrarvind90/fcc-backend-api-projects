@@ -1,9 +1,9 @@
 import { Router, urlencoded } from 'express';
 
-import logger from '../../../config/logger';
-import validate from '../middlewares/validators/validator';
-import { validator } from '../middlewares/validators';
-import { controller } from '../controllers';
+import logger from '../../../config/logger.js';
+import validate from '../middlewares/validators/validator.js';
+import { validator } from '../middlewares/validators/index.js';
+import { controller } from '../controllers/index.js';
 
 const router = Router();
 

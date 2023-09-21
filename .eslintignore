@@ -2,7 +2,6 @@
 /public
 /logs
 README.md
-.babelrc.json
 .eslintrc.json
 .prettierrc.json
 package.json

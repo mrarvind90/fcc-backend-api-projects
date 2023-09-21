@@ -1,5 +1,5 @@
-import { service } from '../services';
-import logger from '../../../config/logger';
+import logger from '../../../config/logger.js';
+import { service } from '../services/index.js';
 
 export const createNewUser = async (req, res) => {
 	const { username, _id } = await service.users.createNewUser(req.body.username);

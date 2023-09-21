@@ -1,4 +1,4 @@
-import { formatToUnixMsTimestamp, formatToUTCTimestamp } from '../helpers/timestamp-utils';
+import { formatToUnixMsTimestamp, formatToUTCTimestamp } from '../helpers/timestamp-utils.js';
 
 export const getFormattedDate = (date) => {
 	return {

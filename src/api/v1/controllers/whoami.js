@@ -1,4 +1,4 @@
-import { service } from '../services';
+import { service } from '../services/index.js';
 
 export const getFormattedReqHeaders = (req, res) => {
 	const { ipaddress, language, software } = service.whoami.getFormattedReqHeaders(req.headers);
