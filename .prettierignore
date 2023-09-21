@@ -1,0 +1,14 @@
+/node_modules
+/public
+/logs
+.babelrc.json
+.eslintrc.json
+.prettierrc.json
+package.json
+package-lock.json
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.replit
