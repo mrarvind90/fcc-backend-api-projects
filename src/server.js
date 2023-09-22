@@ -2,7 +2,6 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
-import env from './config/environment.js';
 import DB_OPTIONS from './config/database.js';
 import CORS_OPTIONS from './config/cors.js';
 import logger from './config/logger.js';
@@ -13,7 +12,7 @@ const app = express();
 
 // Initialise database connection
 mongoose
-	.connect(`${env.MONGODB_ATLAS_URI}`, DB_OPTIONS)
+	.connect(process.env.MONGODB_ATLAS_URI, DB_OPTIONS)
 	.then(() => {
 		logger.info('Connected to MongoDB');
 	})
@@ -48,6 +47,6 @@ app.use((err, req, res, next) => {
 });
 
 // Server
-app.listen(env.PORT, () => {
-	logger.info(`Application started and listening at port ${env.PORT}`);
+app.listen(process.env.PORT, () => {
+	logger.info(`Application started and listening at port ${process.env.PORT}`);
 });
